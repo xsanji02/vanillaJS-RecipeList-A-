@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(139, 124, 108);
+}
+
+.container {
+    margin: 1rem auto;
+    display: grid;
+    place-content: center;
+    gap: 10px
+}
+
+input, button {
+    width: 15rem;
+    height: 2.5rem;
+}
+
+ul li {
+    margin: 10px;
+    cursor: pointer;
+}
+
