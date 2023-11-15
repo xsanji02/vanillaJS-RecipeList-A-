@@ -1,23 +1,88 @@
 * {
-    padding: 0;
-    margin: 0;
-    background-color: rgb(139, 124, 108);
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  color: #0f2a3d;
+  cursor: pointer;
+}
+
+/*
+color combination will use
+HARMONY COLORS
+#OF2A3D
+#719EBD
+#FFEFCE
+#FFA439
+*/
+body,
+html {
+  background-color: #0f2a3d;
 }
 
 .container {
-    margin: 1rem auto;
-    display: grid;
-    place-content: center;
-    gap: 10px
+  margin: 1rem auto;
+  display: grid;
+  place-content: center;
+  gap: 10px;
 }
 
-input, button {
-    width: 15rem;
-    height: 2.5rem;
+input {
+  width: 20rem;
+  height: 3rem;
+  border-radius: 6px;
+  background-color: #ffefce;
+  cursor: text;
+  font-size: 1.22rem;
+}
+
+input::placeholder {
+  position: absolute;
+  left: 7px;
+  font-size: 1.1rem;
+}
+
+img {
+  height: 220px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.image-container {
+  padding: 2rem;
+  display: flex;
+}
+
+button {
+  width: 19rem;
+  height: 2.5rem;
+  border-radius: 6px;
+  background-color: #ffefce;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+#add-btn {
+  margin-top: 15px;
 }
 
 ul li {
-    margin: 10px;
-    cursor: pointer;
+  list-style-type: none;
+  margin: 10px 0;
+  font-size: 19px;
+  font-weight: 700;
+  border: 2px solid #a6d357;
+  border-radius: 5px;
+  max-width: 130px;
+  padding: 0.55rem;
+  color: #0f2a3d;
+  background-color: #a6d357;
 }
 
+ul > li:hover {
+  background-color: #93cc30;
+}
+
+button:hover {
+  background-color: rgb(251, 229, 185);
+}

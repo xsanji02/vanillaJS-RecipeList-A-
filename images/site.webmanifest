@@ -1,0 +1,19 @@
+{
+  "name": "Recipe List App",
+  "short_name": "Recipe List App",
+  "icons": [
+    {
+      "src": "images/imagemain.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/imagemain.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ffefce",
+  "background_color": "#0f2a3d",
+  "display": "standalone"
+}
