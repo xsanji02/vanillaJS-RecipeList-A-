@@ -61,13 +61,23 @@ const appendRecipeListOnElement = (item) => {
   let itemKey = item[0];
   let itemValue = item[1];
   let newElement = document.createElement("li");
+  let newDeleteElement = document.createElement("span");
 
   newElement.innerHTML = itemValue;
-
   recipeListElement.appendChild(newElement);
+  newDeleteElement.innerHTML = "\u0058";
+  newElement.appendChild(newDeleteElement);
 
-  newElement.addEventListener("click", () => {
-    newElement.style.textDecoration = "line-through";
+  newDeleteElement.addEventListener("click", () => {
+    let newSpanElDelRecipeListOnDB = ref(database, `recipeList/${itemKey}`);
+    remove(newSpanElDelRecipeListOnDB);
+  });
+
+  newElement.addEventListener("click", function () {
+    let newStyle = (newElement.style.textDecoration = "line-through");
+    if (newStyle) {
+      newElement.classList.add("checked");
+    }
   });
 
   deleteAllRecipeListButton.addEventListener("click", () => {
